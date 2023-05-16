@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gameSpace{
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.square{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    background-color: rgb(58, 58, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square p{
+    position: absolute;
+    left: calc(100% - 20px);
+    top: 20px;
+    color: white;
+    z-index: 15;
+}
+.square1,.square7,.square12,.square15,.square18,.square25{
+    background-color: green;
+}
+.square2,.square6,.square11,.square13,.square17,.square22{
+    background-color: rgb(49, 49, 49);
+}
+.square3,.square10,.square16,.square21{
+    background-color: rgb(128, 45, 128);
+}
+.square5,.square8,.square19,.square24{
+    background-color: rgb(30, 177, 182);
+}
+.gameSpace img{
+    position: absolute;
+}
+.ladder1{
+    width: 250px;
+    height: 400px;
+    top: 200px;
+    left: 50px;
+    transform: rotate(-30deg);
+    z-index: 11;
+    opacity: 90%;
+}
+.ladder2{
+    width: 150px;
+    height: 200px;
+    top: 270px;
+    left: 50px;
+    transform: rotate(50deg);
+    z-index: 10;
+}
+.ladder3{
+    width: 170px;
+    height: 350px;
+    top: 100px;
+    left: 190px;
+    transform: rotate(30deg);
+    z-index: 10;
+}
+.ladder4{
+    width: 170px;
+    height: 350px;
+    top: 100px;
+    left: 390px;
+    transform: rotate(-20deg);
+    z-index: 10;
+}
+.snake1{
+    width: 100px;
+    top: 290px;
+    left: 380px;
+}
+.snake2{
+    width: 100px;
+    top: 170px;
+    left: 200px;
+    transform: rotate(-30deg);
+    z-index: 12;
+}
+.snake3{
+    width: 70px;
+    top: 40px;
+    left: 100px;
+    transform: rotate(30deg);
+    z-index: 12;
+}
+.snake4{
+    width: 70px;
+    top: 40px;
+    left: 450px;
+    transform: rotate(-50deg);
+    z-index: 12;
+}
+
+.dicePlace{
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: green;
+}
+.dicePlace img{
+    width: 130px;
+    height: 130px;
+}
+.dicePlace p{
+    font-size: 32px;
+}
+.dicePlace button{
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+.dicePlace button:hover{
+    background-color: black;
+    color: green;
+}
+.hero{
+    width: 50px;
+    z-index: 20;
+}
