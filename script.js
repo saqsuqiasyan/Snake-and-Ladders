@@ -95,7 +95,7 @@ function playAgain(){
 
 function alertWin(){
     setTimeout(()=>{
-        alert("You are win yohoooooo")
+        alert("You win yohoooooo")
         playAgain()
     },500)
 }
